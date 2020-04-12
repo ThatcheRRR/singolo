@@ -138,3 +138,75 @@ header > ul li:not(:last-child) {
     right: 5px;
     transform: rotate(180deg);
 }
+
+.services {
+    margin-top: 70px;
+    padding: 0 480px;
+    color: #666d89;
+}
+
+.services__header {
+    font-family: "Lato-Black";
+    font-size: 30px;
+}
+
+.services__descr {
+    width: 960px;
+    margin-left: 2px;
+    margin-top: 22px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    font-family: "Lato-Light";
+    font-size: 18px;
+}
+
+.container {
+    width: 220px;
+}
+
+.content {
+    max-width: 1020px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
+.content__block {
+    display: flex;
+}
+
+.content__block:nth-child(1n + 4) {
+    margin-top: 33px;
+}
+
+.content__block_image {
+    margin-top: 7px;
+    padding-left: 2px;
+    margin-right: 23px;
+}
+
+.container__header {
+    font-family: "Lato-Black";
+    font-size: 18px;
+}
+
+.container__descr {
+    margin-top: 10px;
+    line-height: 1.3rem;
+    font-family: "Lato-Regular";
+    font-size: 12px;
+}
+
+.portfolio {
+    padding: 0 480px;
+    padding-top: 60px;
+    margin-top: 68px;
+    color: #666d89;
+    background-color: #2d303a;
+}
+
+.portfolio__header {
+    font-family: "Lato-Black";
+    font-size: 30px;
+}
