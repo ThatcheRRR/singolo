@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("assets/Lato-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("assets/Lato-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url("assets/Lato-Black.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("assets/Lato-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 480px;
+    height: 89px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d303a;
+}
+
+header::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: #323746;
+}
+
+header > h1 {
+    font-family: "Lato-Bold";
+    font-size: 25px;
+    color: #fff;
+}
+
+header > h1 > span {
+    color: #f06c64;
+}
+
+header > ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > ul a {
+    margin-top: 4px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-family: "Lato-Bold";
+    font-size: 12px;
+    color: #fff;
+}
+
+header > ul a:hover {
+    color: #f06c64;
+}
+
+header > ul li {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+header > ul li:not(:last-child) {
+    margin-right: 29px;
+}
+
+.slider {
+    position: relative;
+    padding: 0 480px;
+    background-color: #f06c64;
+}
+
+.slider__preview {
+    position: relative;
+    height: 595px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 11px;
+    background-color: #ea676b;
+}
+
+.arrow {
+    position: absolute;
+    top: 48%;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.right-arrow {
+    right: 5px;
+    transform: rotate(180deg);
+}
