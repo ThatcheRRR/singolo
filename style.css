@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Lato-Regular";
     src: url("assets/Lato-Regular.ttf");
@@ -107,7 +111,7 @@ header > ul li:not(:last-child) {
 
 .slider__preview {
     position: relative;
-    height: 595px;
+    height: 605px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,11 +121,11 @@ header > ul li:not(:last-child) {
     content: "";
     z-index: 2;
     position: absolute;
-    bottom: -11px;
+    bottom: 0;
     left: 0;
     display: block;
     width: 100%;
-    height: 11px;
+    height: 6px;
     background-color: #ea676b;
 }
 
@@ -141,7 +145,7 @@ header > ul li:not(:last-child) {
 
 .services {
     position: relative;
-    margin-top: 70px;
+    margin-top: 60px;
     padding: 0 480px;
     color: #666d89;
     background-color: #f2f2f2;
@@ -215,7 +219,7 @@ header > ul li:not(:last-child) {
 
 .portfolio {
     position: relative;
-    padding: 0 480px;
+    padding: 0 481px;
     padding-top: 60px;
     color: #666d89;
     background-color: #2d303a;
@@ -241,7 +245,6 @@ header > ul li:not(:last-child) {
 
 .portfolio__descr {
     margin-top: 20px;
-    margin-left: 1px;
     font-family: "Lato-Light";
     font-size: 18px;
 }
@@ -277,4 +280,70 @@ header > ul li:not(:last-child) {
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     grid-gap: 20px 20px;
     margin-top: 18px;
+}
+
+.about {
+    position: relative;
+    padding: 0 481px;
+    padding-top: 60px;
+    padding-bottom: 71px;
+    color: #666d89;
+    background-color: #f2f2f2;
+}
+
+.about::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: #fff;
+}
+
+.about__header {
+    font-family: "Lato-Black";
+    font-size: 30px;
+}
+
+.about__descr {
+    margin-top: 20px;
+    line-height: 1.8rem;
+    word-spacing: 1px;
+    font-family: "Lato-Light";
+    font-size: 18px;
+}
+
+.team {
+    margin-top: 45px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.team__member {
+    width: 300px;
+}
+
+.bio__name {
+    margin-top: 12px;
+    font-family: "Lato-Black";
+    font-size: 18px;
+}
+
+.bio__descr {
+    margin-top: 10px;
+    line-height: 1.3rem;
+    font-family: "Lato-Light";
+    font-size: 12px;
+}
+
+.team__member_links {
+    margin-top: 23px;
+    margin-left: 1px;
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
 }
